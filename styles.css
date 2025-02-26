@@ -98,6 +98,17 @@ img {
     font-weight: bold;
 }
 
+/* Outlined Button */
+.button-outlined {
+    display: inline-block;
+    background-color: transparent;
+    color: #000;
+    padding: 16px 45px;
+    text-decoration: none;
+    border: 2px solid #000;
+    font-weight: bold;
+}
+
 /* Responsive Adjustments (Mobile First) */
 @media only screen and (max-width: 480px) {
 
