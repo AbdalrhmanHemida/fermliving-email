@@ -6,12 +6,15 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, span, table, td, th {
     font-family: sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
+    color: #333333; /* Set a default text color */
 }
 
 body {
     background-color: #F5F5F5;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* hero section */
@@ -25,6 +28,18 @@ td {
     mso-line-height-rule: exactly;
 }
 
+/* Images - Force max width, maintain aspect ratio */
+img {
+    border: 0 none;
+    padding: 0 !important;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic; /* For older Outlook versions */
+    display: block;
+    max-width: 100%;
+}
+
 /* Utility Classes - Layout & Spacing */
 .w-full { width: 100%; }
 .w-50 { width: 50%; }
@@ -32,6 +47,8 @@ td {
 
 .p-10 { padding: 10px; }
 .p-20 { padding: 20px; }
+.pl-5 { padding-left: 5px; }
+.main-padding { padding: 20px; }
 .py-10 { padding-top: 10px; padding-bottom: 10px;}
 .py-20 { padding-top: 20px; padding-bottom: 20px;}
 .px-10 {padding-left: 10px; padding-right: 10px;}
@@ -42,12 +59,13 @@ td {
 .mt-20{margin-top: 20px;}
 .mb-10{margin-bottom: 10px;}
 .mb-20{margin-bottom: 20px;}
+.mb-25{margin-bottom: 25px;}
 .mb-30{margin-bottom: 30px;}
 
 /* TODO: remove */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-right { text-align: -webkit-right; }
 
 .flex {
     display: -webkit-box;
@@ -96,6 +114,7 @@ td {
 /* layouts */
 .container {
     max-width: 600px;
+    width: 100%;
     margin: 0 auto;
     background-color: #F7EDE1;
     padding: 20px;
@@ -123,13 +142,6 @@ td {
     font-weight: bold;
 }
 
-/* Images - Force max width, maintain aspect ratio */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* Responsive Adjustments (Mobile First) */
 @media only screen and (max-width: 480px) {
 
@@ -140,6 +152,15 @@ img {
 
     .container {
         padding: 10px !important;
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 480px) {
+    .mobile-full-width {
+        width: 100% !important;
+        display: block !important;
+        padding-right: 0 !important; /* Reset padding on mobile */
     }
 }
 
