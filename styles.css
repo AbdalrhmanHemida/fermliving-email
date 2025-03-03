@@ -3,7 +3,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, span, table, td, th {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
     color: #333333; /* Set a default text color */
@@ -31,13 +31,12 @@ td {
 /* Images - Force max width, maintain aspect ratio */
 img {
     border: 0 none;
-    padding: 0 !important;
-    line-height: 100%;
     outline: none;
     text-decoration: none;
     -ms-interpolation-mode: bicubic; /* For older Outlook versions */
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 /* Utility Classes - Layout & Spacing */
