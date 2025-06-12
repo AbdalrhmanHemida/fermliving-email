@@ -9,23 +9,27 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, span, table, td, th {
     color: #333333; /* Set a default text color */
 }
 
-body {
-    background-color: #F5F5F5;
+/* CLIENT-SPECIFIC STYLES */
+body,
+table,
+td,
+a {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
-/* hero section */
-table {
-    border-collapse: collapse;
+table,
+td {
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
 }
 
-td {
-    mso-line-height-rule: exactly;
+body {
+    background-color: #F5F5F5;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 
 /* Images - Force max width, maintain aspect ratio */
@@ -37,6 +41,48 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    line-height: 100%;
+}
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* GMAIL BLUE LINKS */
+u+#body a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* SAMSUNG MAIL BLUE LINKS */
+#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Universal styles for links */
+a {
+    color: #229efd;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fd6350;
+    text-decoration: none;
 }
 
 /* Utility Classes - Layout & Spacing */
@@ -129,9 +175,18 @@ img {
 }
 
 /* Responsive Adjustments (Mobile First) */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .container {
         padding: 10px !important;
+    }
+    
+    h1 {
+        font-size: 24px !important;
+    }
+
+    .mobile {
+        max-width: 100% !important;
+        width: 100% !important;
     }
 }
 
