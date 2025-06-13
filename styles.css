@@ -154,13 +154,13 @@ a:hover {
 /* Buttons */
 .button {
     display: inline-block;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 4px;
     mso-padding-alt: 0; /*to reset padding in Outlook*/
-    text-underline-color: #fff;  /* to handle Windows Mail underline issues */
+    text-underline-color: #ffffff;  /* to handle Windows Mail underline issues */
 }
 
 /* Outlined Button */
@@ -169,7 +169,7 @@ a:hover {
     background-color: transparent;
     padding: 16px 45px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     mso-padding-alt: 0;
     text-underline-color: transparent;
 }
@@ -179,7 +179,7 @@ a:hover {
     background-color: transparent;
     padding: 15px 6px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     mso-padding-alt: 0;
     text-underline-color: transparent;
 }
