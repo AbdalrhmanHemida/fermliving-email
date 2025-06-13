@@ -157,6 +157,8 @@ a:hover {
     text-decoration: none;
     border: 1px solid #000;
     border-radius: 4px;
+    mso-padding-alt: 0; /*to reset padding in Outlook*/
+    text-underline-color: #fff;  /* to handle Windows Mail underline issues */
 }
 
 /* Outlined Button */
@@ -166,6 +168,8 @@ a:hover {
     padding: 16px 45px;
     text-decoration: none;
     border: 2px solid #000;
+    mso-padding-alt: 0;
+    text-underline-color: transparent;
 }
 
 .button-outlined-2 {
@@ -174,6 +178,40 @@ a:hover {
     padding: 15px 6px;
     text-decoration: none;
     border: 2px solid #000;
+    mso-padding-alt: 0;
+    text-underline-color: transparent;
+}
+
+/* Button Container for Outlook */
+.button-container {
+    text-align: center;
+}
+
+/* Social Icons Container */
+.social-icon-container {
+    padding: 0 5px;
+    text-align: center;
+}
+
+/* Button MSO Fixes */
+.button-container a,
+.social-icon-container a {
+    text-align: center;
+    text-decoration: none;
+    text-underline-color: transparent;
+}
+
+.button-container a i,
+.social-icon-container a i {
+    font-style: normal;
+    mso-font-width: 200%;
+    mso-text-raise: 100%;
+}
+
+/* Social Icons MSO Fixes */
+.social-icon-container a i {
+    mso-font-width: 100%;
+    mso-text-raise: 50%;
 }
 
 /* Responsive Adjustments (Mobile First) */
