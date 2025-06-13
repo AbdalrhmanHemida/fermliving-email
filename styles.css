@@ -112,8 +112,10 @@ a:hover {
 .pt-40{padding-top: 40px;}
 .pl-15{padding-left: 15px;}
 .pr-20{padding-right: 20px;}
-.pr-30{padding-right: 30px;}
+.ml-10{margin-left: 10px;}
+.mr-10{margin-right: 10px;}
 .mr-20{margin-right: 20px;}
+.mr-30{margin-right: 30px;}
 .pr-15{padding-right: 15px;}
 .pb-30{padding-bottom: 30px;}
 .pb-17{padding-bottom: 17px;}
