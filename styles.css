@@ -9,23 +9,27 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, span, table, td, th {
     color: #333333; /* Set a default text color */
 }
 
-body {
-    background-color: #F5F5F5;
+/* CLIENT-SPECIFIC STYLES */
+body,
+table,
+td,
+a {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
-/* hero section */
-table {
-    border-collapse: collapse;
+table,
+td {
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
 }
 
-td {
-    mso-line-height-rule: exactly;
+body {
+    background-color: #F5F5F5;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 
 /* Images - Force max width, maintain aspect ratio */
@@ -37,23 +41,66 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    line-height: 100%;
+}
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* GMAIL BLUE LINKS */
+u+#body a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* SAMSUNG MAIL BLUE LINKS */
+#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Universal styles for links */
+a {
+    color: #229efd;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fd6350;
+    text-decoration: none;
 }
 
 /* Utility Classes - Layout & Spacing */
 .w-full { width: 100%; }
-.w-50 { width: 50%; }
-.w-33 { width: 33.3333%;}
 
+.p-0 { padding: 0; }
 .p-10 { padding: 10px; }
 .p-20 { padding: 20px; }
 .pl-5 { padding-left: 5px; }
 .main-padding { padding: 20px; }
+.secondary-padding { padding: 10px; }
 .ptrl-20 { padding: 20px 20px 0 20px; }
 .prlb-20 { padding: 0 20px 20px 20px; }
 .py-10 { padding-top: 10px; padding-bottom: 10px;}
 .py-20 { padding-top: 20px; padding-bottom: 20px;}
 .px-10 {padding-left: 10px; padding-right: 10px;}
 .px-20 {padding-left: 20px; padding-right: 20px;}
+.m-0 { margin: 0; }
 .my-10{margin-top: 10px; margin-bottom: 10px; }
 .my-20{margin-top: 20px; margin-bottom: 20px; }
 .mt-10{margin-top: 10px;}
@@ -63,12 +110,18 @@ img {
 .mb-20{margin-bottom: 20px;}
 .mb-25{margin-bottom: 25px;}
 .mb-30{margin-bottom: 30px;}
+.mb-44{margin-bottom: 44px;}
 .mb-50{margin-bottom: 50px;}
+.mt-28{margin-top: 28px;}
 .pt-40{padding-top: 40px;}
-.pl-22{padding-left: 22px;}
+.pl-15{padding-left: 15px;}
+.pr-5{padding-right: 5px;}
 .pr-20{padding-right: 20px;}
+.ml-10{margin-left: 10px;}
+.mr-10{margin-right: 10px;}
 .mr-20{margin-right: 20px;}
-.pr-22{padding-right: 22px;}
+.mr-30{margin-right: 30px;}
+.pr-15{padding-right: 15px;}
 .pb-30{padding-bottom: 30px;}
 .pb-17{padding-bottom: 17px;}
 .pr-10{padding-right: 10px;}
@@ -77,8 +130,18 @@ img {
 .pr-50{padding-right: 50px;}
 .pt-50{padding-top: 50px;}
 .py-38{padding-top: 38px; padding-bottom: 38px;}
-
+.d-none { display: none; }
+.v-top { vertical-align: top; }
+.v-middle { vertical-align: middle; }
+.v-bottom { vertical-align: bottom; }
+.v-center { vertical-align: center; }
+.hidden { display: none; max-height: 0px; overflow: hidden; }
+.d-block { display: block; }
+.text-decoration-line-through { text-decoration: line-through; }
 .cell-padding { padding: 20px; }
+
+/* text colors */
+.f7ed-e1 { color: #F7EDE1; }
 
 
 .text-center { text-align: center; }
@@ -106,11 +169,13 @@ img {
 /* Buttons */
 .button {
     display: inline-block;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 4px;
+    mso-padding-alt: 0; /*to reset padding in Outlook*/
+    text-underline-color: #ffffff;  /* to handle Windows Mail underline issues */
 }
 
 /* Outlined Button */
@@ -119,44 +184,68 @@ img {
     background-color: transparent;
     padding: 16px 45px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 2px solid #000000;
+    mso-padding-alt: 0;
+    text-underline-color: transparent;
 }
 
 .button-outlined-2 {
     display: inline-block;
     background-color: transparent;
-    padding: 15px 14px;
+    padding: 15px 6px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 2px solid #000000;
+    mso-padding-alt: 0;
+    text-underline-color: transparent;
+}
+
+/* Button Container for Outlook */
+.button-container {
+    text-align: center;
+}
+
+/* Social Icons Container */
+.social-icon-container {
+    padding: 0 5px;
+    text-align: center;
+}
+
+/* Button MSO Fixes */
+.button-container a,
+.social-icon-container a {
+    text-align: center;
+    text-decoration: none;
+    text-underline-color: transparent;
+}
+
+.button-container a i,
+.social-icon-container a i {
+    font-style: normal;
+    mso-font-width: 200%;
+    mso-text-raise: 100%;
+}
+
+/* Social Icons MSO Fixes */
+.social-icon-container a i {
+    mso-font-width: 100%;
+    mso-text-raise: 50%;
 }
 
 /* Responsive Adjustments (Mobile First) */
-@media only screen and (max-width: 480px) {
-
-    .w-50,
-    .w-33 {
-        width: 100% !important;
-    }
-
+@media screen and (max-width: 600px) {
     .container {
         padding: 10px !important;
     }
-}
+    
+    h1 {
+        font-size: 24px !important;
+    }
 
-/* Responsive Styles */
-@media only screen and (max-width: 480px) {
-    .mobile-full-width {
+    .mobile {
+        max-width: 100% !important;
         width: 100% !important;
-        display: block !important;
-        padding-right: 0 !important; /* Reset padding on mobile */
     }
 }
-
-
-
-
-
-
 
 /* Color Classes */
 .text-gray-81 { color: #818181 !important; }

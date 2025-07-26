@@ -12,14 +12,20 @@
 </head>
 
 <body>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5" style="margin: 0; padding: 0;">
+  <!-- Preview text -->
+  <div class="hidden">
+    Add a playful touch to your space with our handcrafted apple-shaped storage basket. Available in two sizes—combine
+    it with the sweet pear for a perfect pair!
+  </div>
+  <!-- End preview text -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#f5f5f5" class="m-0 p-0">
     <!-- Logo Row -->
     <tr>
       <td align="center">
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
             <td class="main-padding">
-              <img src="/images/logo-2.png" alt="Ferm Living Logo">
+              <img src="/images/logo-2.png" alt="Ferm Living Logo" width="87" height="51" style="width: 87px; height: 51px; display: block;">
             </td>
           </tr>
         </table>
@@ -30,23 +36,26 @@
     <tr>
       <td align="center">
         <!-- Container Table -->
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
-            <td class="main-padding">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <td class="main-padding" align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <!-- Sizing Row for Outlook -->
-                <tr style="display: none;">
+                <tr class="d-none" aria-hidden="true">
                   <td width="55%"></td>
                   <td width="45%"></td>
                 </tr>
                 <tr>
-                  <td valign="top" width="55%">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mt-20">
+                  <td valign="top" width="55%" class="v-top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td>
-                          <img src="/images/01-hero-text.png" alt="Text describing the apple basket" width="309"
+                          <img src="/images/01-hero-text.png" alt="An Apple a Day... for Stylish" width="309"
                             height="77" class="mb-10">
                         </td>
+                        <!-- <td>
+                          <h2 class="text-section-title text-black mb-10">An Apple a Day... for Stylish <span class="text-brown-e1">Storage</span></h2>
+                        </td> -->
                       </tr>
                       <tr>
                         <td>
@@ -59,10 +68,13 @@
                       </tr>
                       <tr>
                         <td>
-                          <table align="center" border="0" cellspacing="0" cellpadding="0">
+                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
                               <td class="button-container">
-                                <a href="https://fermliving.com/products/apple-braided-storage" class="button-outlined text-button text-black-1a" target="_blank">Shop Now</a>
+                                <a href="https://fermliving.com/products/apple-braided-storage"
+                                  class="button-outlined text-button text-black-1a"
+                                  target="_blank"><!--[if mso]><i style="mso-font-width:200%;mso-text-raise:100%" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]-->Shop
+                                  Now<!--[if mso]></span><i style="mso-font-width:200%;" hidden>&emsp;&#8203;</i><![endif]--></a>
                               </td>
                             </tr>
                           </table>
@@ -70,8 +82,10 @@
                       </tr>
                     </table>
                   </td>
-                  <td align="right" class="pl-5 text-right">
-                    <img src="/images/01-hero.jpg" alt="Apple-shaped storage basket" width="225" height="373">
+                  <td align="right" valign="top" class="pl-5 text-right v-top">
+                    <img src="/images/01-hero.jpg"
+                      alt="A smiling young girl holding a handcrafted apple-shaped woven basket in a child's room with animal-patterned wallpaper."
+                      width="225" height="373">
                   </td>
                 </tr>
               </table>
@@ -84,12 +98,12 @@
     <!-- Two Products -->
     <tr>
       <td align="center">
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
             <td class="main-padding">
-              <table width="100%" border="0" bgcolor="#ECD5BC" cellspacing="0" cellpadding="0">
+              <table width="100%" border="0" bgcolor="#ECD5BC" cellspacing="0" cellpadding="0" role="presentation">
                 <!-- Sizing Row for Outlook -->
-                <tr style="display: none;">
+                <tr class="d-none" aria-hidden="true">
                   <td width="50%"></td>
                   <td width="50%"></td>
                 </tr>
@@ -101,33 +115,40 @@
                   </td>
                 </tr>
                 <tr>
-                  <td valign="center" align="left" width="50%" class="mobile-full-width pl-22 text-left">
-                    <p class="cell-padding text-product-title text-brown-9c">The pear-shaped basket brings a charming touch to kids' rooms—fill it with teddies or treasures.
+                  <td valign="center" align="left" width="50%" class="pl-15 text-left v-middle">
+                    <p class="mr-10 text-product-title text-brown-9c mb-20">The pear-shaped basket brings a charming
+                      touch to kids' rooms—fill it with teddies or treasures.
                     </p>
                   </td>
-                  <td valign="top" align="right" width="50%" class="mobile-full-width pr-22 text-right">
-                    <img src="/images/02-product-1.png" alt="Product Image" class="image-responsive">
+                  <td valign="top" align="right" width="50%" class="pr-15 text-right v-top">
+                    <img src="/images/02-product-1.png"
+                      alt="A pear-shaped woven rattan storage basket with a green leafy detail on its lid."
+                      class="d-block mb-20">
                   </td>
                 </tr>
                 <tr>
-                  <td valign="top" align="left" width="50%" class="mobile-full-width pl-22">
-                    <img src="/images/02-product-2.png" alt="Pear Basket">
+                  <td valign="top" align="left" width="50%" class="pl-15 v-top">
+                    <img src="/images/02-product-2.png"
+                      alt="An apple-shaped woven basket with the lid removed to show its storage interior."
+                      class="mb-20">
                   </td>
-                  <td valign="center" width="50%" class="mobile-full-width pr-22">
-                    <p class="cell-padding text-product-title text-brown-9c">Perfect for storing toys, blankets, or everyday essentials in a unique, stylish
+                  <td valign="center" width="50%" class="pr-15 v-middle">
+                    <p class="ml-10 text-product-title text-brown-9c mb-20">Perfect for storing toys, blankets, or
+                      everyday essentials in a unique, stylish
                       way.</p>
                   </td>
                 </tr>
                 <tr>
-                  <td valign="center" width="50%" class="mobile-full-width pl-22 cell-padding">
+                  <td valign="center" width="50%" class="pl-15 pr-10 v-middle">
                     <h3 class="mb-10 text-product-title text-brown-9c">Timeless Design</h3>
                     <p class="mb-10">
                       <span class="text-highlight-price text-brown-9c">€49.00</span>
-                      <span class="text-crossed-price text-gray-95" style="text-decoration: line-through;">€59.99</span>
+                      <span class="text-crossed-price text-gray-95 text-decoration-line-through">€59.99</span>
                     </p>
                   </td>
-                  <td valign="top" align="right" width="50%" class="mobile-full-width pr-22 pb-30">
-                    <img src="/images/02-product-3.png" alt="Apple Basket">
+                  <td valign="top" align="right" width="50%" class="pr-15 pb-30 v-top">
+                    <img src="/images/02-product-3.png"
+                      alt="A closed apple-shaped rattan storage basket with a brown stem.">
                   </td>
                 </tr>
               </table>
@@ -137,54 +158,59 @@
       </td>
     </tr>
 
-    <!-- Action Type Section -->
+    <!-- See it come alive (desire) -->
     <tr>
       <td align="center">
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
             <td class="main-padding">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <!-- Sizing Row for Outlook -->
-                <tr style="display: none;">
+                <tr class="d-none" aria-hidden="true">
                   <td width="53%"></td>
                   <td width="47%"></td>
                 </tr>
                 <!-- Title Row -->
                 <tr>
                   <td align="center" colspan="2" class="p-20">
-                    <h2 class="text-section-title">SEE IT COME <span class="text-brown-e1">ALIVE</span> IN ACTION TYPE</h2>
+                    <h2 class="text-section-title">SEE IT COME <span class="text-brown-e1">ALIVE</span> IN ACTION TYPE
+                    </h2>
                   </td>
                 </tr>
                 <!-- Left Column (Large Image) / Right Column (Two Stacked Images) -->
                 <tr>
-                  <td valign="top" width="53%" class="mobile-full-width pr-10">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <td valign="top" width="53%" class="pr-5 v-top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="pb-17">
-                          <img src="/images/03-inaction-1.jpg" alt="Decor setup with basket" width="100%"
-                            style="display: block;">
+                          <img src="/images/03-inaction-1.jpg"
+                            alt="A large woven apple basket sitting on a round jute rug at a person's feet."
+                            width="100%" class="d-block">
                         </td>
                       </tr>
                       <tr>
                         <td class="">
-                          <img src="/images/03-inaction-4.jpg" alt="Cozy kids room with baskets" width="100%"
-                            style="display: block;">
+                          <img src="/images/03-inaction-4.jpg"
+                            alt="A child's playroom corner featuring a pear-shaped storage basket next to a play stand"
+                            width="100%" class="d-block">
                         </td>
                       </tr>
                     </table>
                   </td>
-                  <td valign="top" width="47%" class="mobile-full-width pl-10">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <td valign="top" width="47%" class="pl-5 v-top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td class="pb-17">
-                          <img src="/images/03-inaction-2.jpg" alt="Decor setup with basket" width="100%"
-                            style="display: block;">
+                          <img src="/images/03-inaction-2.jpg"
+                            alt="An apple-shaped storage basket on a wooden floor next to a small modern desk and stool."
+                            width="100%" class="d-block">
                         </td>
                       </tr>
                       <tr>
                         <td class="">
-                          <img src="/images/03-inaction-3.jpg" alt="Cozy kids room with baskets" width="100%"
-                            style="display: block;">
+                          <img src="/images/03-inaction-3.jpg"
+                            alt="A cozy bedroom corner with a pear-shaped wall mirror and a woven storage basket beside the bed."
+                            width="100%" class="d-block">
                         </td>
                       </tr>
                     </table>
@@ -200,26 +226,27 @@
     <!-- Ready to Refresh Section -->
     <tr>
       <td align="center">
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
             <td class="main-padding">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                 <!-- Sizing Row for Outlook -->
-                <tr style="display: none;">
-                  <td width="45%"></td>
-                  <td width="55%"></td>
+                <tr class="d-none" aria-hidden="true">
+                  <td width="47%"></td>
+                  <td width="53%"></td>
                 </tr>
                 <tr>
-                  <td valign="top" width="47%">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <td valign="top" width="47%" class="v-top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                       <tr>
                         <td>
-                          <h2 class="text-section-title text-black mb-10">Ready to <span class="text-brown-e1">Refresh</span> Your Space?</h2>
+                          <h2 class="text-section-title text-black mb-10">Ready to <span
+                              class="text-brown-e1">Refresh</span> Your Space?</h2>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <p class="text-paragraph text-gray-81 mb-30 pr-50">
+                          <p class="text-paragraph text-gray-81 mb-30 mr-30">
                             Add a piece of art to your home today and experience the harmony of design and
                             functionality.
                           </p>
@@ -227,10 +254,14 @@
                       </tr>
                       <tr>
                         <td>
-                          <table align="left" border="0" cellspacing="0" cellpadding="0">
+                          <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
                             <tr>
                               <td class="button-container">
-                                <a href="https://fermliving.com/products/pear-braided-storage" class="button-outlined-2 text-button text-black-1a" target="_blank">Shop the Collection</a>
+                                <a href="https://fermliving.com/products/pear-braided-storage"
+                                  class="button-outlined-2 text-button text-black-1a"
+                                  target="_blank"><!--[if mso]><i style="mso-font-width:200%;mso-text-raise:100%" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]-->Shop
+                                  the
+                                  Collection<!--[if mso]></span><i style="mso-font-width:200%;" hidden>&emsp;&#8203;</i><![endif]--></a>
                               </td>
                             </tr>
                           </table>
@@ -238,8 +269,10 @@
                       </tr>
                     </table>
                   </td>
-                  <td valign="top" width="53%" class="pl-5">
-                    <img src="/images/04-ready.jpg" alt="Descriptive Alt Text" width="100%" style="display: block;">
+                  <td valign="top" width="53%" class="pl-5 v-top">
+                    <img src="/images/04-ready.jpg"
+                      alt="A large woven laundry-style basket containing a blanket, placed next to a plush unicorn toy."
+                      width="100%" class="d-block">
                   </td>
                 </tr>
               </table>
@@ -252,12 +285,12 @@
     <!-- Footer -->
     <tr>
       <td align="center">
-        <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <table width="600" border="0" cellspacing="0" cellpadding="0" role="presentation" class="container">
           <tr>
             <td class="ptrl-20">
-              <table width="100%" border="0" bgcolor="#ECD5BC" cellspacing="0" cellpadding="0">
+              <table width="100%" border="0" bgcolor="#ECD5BC" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
-                  <td align="center" class="pt-50">
+                  <td align="center" class="secondary-padding pt-50">
                     <p class="text-footer text-brown-9c mb-25">
                       FREE EU SHIPPING ON ORDERS ABOVE €150
                     </p>
@@ -274,46 +307,73 @@
           </tr>
           <tr>
             <td class="prlb-20">
-              <table width="100%" border="0" bgcolor="#7c3f28" cellspacing="0" cellpadding="0">
+              <table width="100%" border="0" bgcolor="#7c3f28" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
-                  <td align="center" class="py-38">
+                  <td align="center" class="secondary-padding py-38">
                     <p class="text-section-title-2 text-white mb-20">
                       <b>WE WOULD LOVE TO HELP YOU</b>
                     </p>
                     <p class="text-paragraph text-gray-d8 mb-15">
-                      Telephone: +45 70227523<br>
+                      Telephone: <a href="https://wa.me/4570227523" class="f7ed-e1"
+                        aria-label="Call us on WhatsApp">+45 70227523</a><br>
                       Need Help? Contact us at <a href="mailto:info@fermliving.com"
-                        style="color: #F7EDE1; text-decoration: underline;">info@fermliving.com</a>
+                        class="f7ed-e1"
+                        aria-label="Send us an email">info@fermliving.com</a>
                     </p>
-                    <p class="text-paragraph text-gray-d8" style="margin-bottom: 44px;">
-                      Ferm Living ApS, Kuglegaardsvej 1-5, 1434 Copenhagen K, Denmark
+                    <p class="text-paragraph text-gray-d8 mb-44">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Ferm+Living+ApS%2C+Kuglegaardsvej+1-5%2C+1434+Copenhagen+K%2C+Denmark" 
+                         target="_blank" 
+                         class="text-gray-d8" 
+                         style="color: #d8d8d8; text-decoration: underline;"
+                         aria-label="View Ferm Living store location on Google Maps">
+                        Ferm Living ApS, Kuglegaardsvej 1-5, 1434 Copenhagen K, Denmark
+                      </a>
                     </p>
                     <!-- Social Icons -->
-                    <table width="auto" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <table width="auto" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation">
                       <tr>
-                        <td style="padding: 0 5px;">
-                          <a href="https://www.facebook.com/fermLIVING/" target="_blank"><img src="/images/05-icon-facebook.png" alt="Facebook" width="24" height="24" style="display: block;"></a>
+                        <td class="social-icon-container">
+                          <a href="https://www.facebook.com/fermLIVING/" target="_blank" title="Follow us on Facebook"
+                            aria-label="Follow Ferm Living on Facebook"><!--[if mso]><i style="mso-font-width:100%;mso-text-raise:50%" hidden aria-hidden="true">&emsp;</i><![endif]--><img
+                              src="/images/05-icon-facebook.png" alt="Facebook" width="24" height="24"
+                              class="d-block"><!--[if mso]><i style="mso-font-width:100%;" hidden aria-hidden="true">&emsp;&#8203;</i><![endif]--></a>
                         </td>
-                        <td style="padding: 0 5px;">
-                          <a href="https://www.tiktok.com/@fermliving_official" target="_blank"><img src="/images/05-icon-tiktok.png" alt="TikTok" width="24" height="24" style="display: block;"></a>
+                        <td class="social-icon-container">
+                          <a href="https://www.tiktok.com/@fermliving_official" target="_blank"
+                            title="Follow us on TikTok"
+                            aria-label="Follow Ferm Living on TikTok"><!--[if mso]><i style="mso-font-width:100%;mso-text-raise:50%" hidden aria-hidden="true">&emsp;</i><![endif]--><img
+                              src="/images/05-icon-tiktok.png" alt="TikTok" width="24" height="24"
+                              class="d-block"><!--[if mso]><i style="mso-font-width:100%;" hidden aria-hidden="true">&emsp;&#8203;</i><![endif]--></a>
                         </td>
-                        <td style="padding: 0 5px;">
-                          <a href="https://www.pinterest.com/fermliving/" target="_blank"><img src="/images/05-icon-pintrest.png" alt="Pinterest" width="24" height="24" style="display: block;"></a>
+                        <td class="social-icon-container">
+                          <a href="https://www.pinterest.com/fermliving/" target="_blank" title="Follow us on Pinterest"
+                            aria-label="Follow Ferm Living on Pinterest"><!--[if mso]><i style="mso-font-width:100%;mso-text-raise:50%" hidden aria-hidden="true">&emsp;</i><![endif]--><img
+                              src="/images/05-icon-pintrest.png" alt="Pinterest" width="24" height="24"
+                              class="d-block"><!--[if mso]><i style="mso-font-width:100%;" hidden aria-hidden="true">&emsp;&#8203;</i><![endif]--></a>
                         </td>
-                        <td style="padding: 0 5px;">
-                          <a href="https://www.instagram.com/fermliving/" target="_blank"><img src="/images/05-icon-instgram.png" alt="Instagram" width="24" height="24" style="display: block;"></a>
+                        <td class="social-icon-container">
+                          <a href="https://www.instagram.com/fermliving/" target="_blank" title="Follow us on Instagram"
+                            aria-label="Follow Ferm Living on Instagram"><!--[if mso]><i style="mso-font-width:100%;mso-text-raise:50%" hidden aria-hidden="true">&emsp;</i><![endif]--><img
+                              src="/images/05-icon-instgram.png" alt="Instagram" width="24" height="24"
+                              class="d-block"><!--[if mso]><i style="mso-font-width:100%;" hidden aria-hidden="true">&emsp;&#8203;</i><![endif]--></a>
                         </td>
-                        <td style="padding: 0 5px;">
-                          <a href="https://www.youtube.com/user/fermliving" target="_blank"><img src="/images/05-icon-youtube.png" alt="YouTube" width="24" height="24" style="display: block;"></a>
+                        <td class="social-icon-container">
+                          <a href="https://www.youtube.com/user/fermliving" target="_blank" title="Follow us on YouTube"
+                            aria-label="Follow Ferm Living on YouTube"><!--[if mso]><i style="mso-font-width:100%;mso-text-raise:50%" hidden aria-hidden="true">&emsp;</i><![endif]--><img
+                              src="/images/05-icon-youtube.png" alt="YouTube" width="24" height="24"
+                              class="d-block"><!--[if mso]><i style="mso-font-width:100%;" hidden aria-hidden="true">&emsp;&#8203;</i><![endif]--></a>
                         </td>
                       </tr>
                     </table>
-                    <p style="margin-top: 28px;">
-                      <a class="text-paragraph text-white" href="#">Privacy Policy</a>
+                    <p class="mt-28">
+                      <a class="text-paragraph text-white" href="https://fermliving.com/pages/privacy-policy"
+                        aria-label="Read our Privacy Policy">Privacy Policy</a>
                       <span class="text-white"> | </span>
-                      <a class="text-paragraph text-white" href="#">Terms and Conditions</a>
+                      <a class="text-paragraph text-white" href="https://fermliving.com/pages/terms-conditions"
+                        aria-label="Read our Terms and Conditions">Terms and Conditions</a>
                       <span class="text-white"> | </span>
-                      <a class="text-paragraph text-white" href="#">Cookies</a>
+                      <a class="text-paragraph text-white" href="https://fermliving.com/pages/cookies"
+                        aria-label="Read our Cookie Policy">Cookies</a>
                       <br>
                       <span class="text-paragraph text-gray-d8">Ferm Living ApS © 2025. All Rights Reserved</span>
                     </p>
