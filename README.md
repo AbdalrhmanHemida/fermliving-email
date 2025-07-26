@@ -97,3 +97,9 @@ This project demonstrates:
 - **Email Marketing Expertise**: Client-specific optimization, deliverability best practices
 - **Design Thinking**: User experience, conversion optimization, brand consistency
 - **Project Management**: Complete workflow from research to deployment
+
+## 📄 License
+
+**Code & Structure**: [MIT License](LICENSE) - Feel free to use and modify the HTML/CSS code for your own projects.
+
+**Brand Assets**: All Ferm Living brand assets, images, and trademarks remain the property of Ferm Living. This project is created for educational and portfolio purposes only.
